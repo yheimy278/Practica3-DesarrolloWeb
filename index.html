@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Excelcius - Tecnología al alcance de todos</title>
+
+    <link rel="stylesheet" href="estilos.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            <h1>EXCELCIUS</h1>
+        </div>
+
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#galeria">Galería</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section id="inicio" class="banner">
+
+            <img src="imagenes/banner.jpg" alt="Celulares y tecnología">
+
+            <div class="banner-texto">
+
+                <h2>Tecnología al alcance de todos</h2>
+
+                <p>
+                    Encuentra celulares de calidad a precios accesibles.
+                </p>
+
+                <a href="#servicios" class="boton">
+                    Conocer servicios
+                </a>
+
+            </div>
+
+        </section>
+                <!-- SERVICIOS -->
+
+        <section id="servicios" class="seccion">
+
+            <h2>Servicios</h2>
+
+            <div class="servicios-contenedor">
+
+                <article class="servicio">
+
+                    <h3>Venta de celulares</h3>
+
+                    <p>
+                        Ofrecemos celulares modernos y accesibles
+                        para diferentes necesidades.
+                    </p>
+
+                </article>
+
+
+                <article class="servicio">
+
+                    <h3>Reparación</h3>
+
+                    <p>
+                        Servicio de reparación y mantenimiento
+                        para dispositivos móviles.
+                    </p>
+
+                </article>
+
+
+                <article class="servicio">
+
+                    <h3>Envíos</h3>
+
+                    <p>
+                        Realizamos envíos de nuestros productos
+                        a diferentes lugares.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+                <!-- GALERÍA -->
+
+        <section id="galeria" class="seccion">
+
+            <h2>Galería</h2>
+
+            <div class="galeria">
+
+                <div class="producto">
+
+                    <img src="imagenes/celular1.jpg" alt="Celular Excelcius X1">
+
+                    <h3>Excelcius X1</h3>
+
+                </div>
+
+
+                <div class="producto">
+
+                    <img src="imagenes/celular2.jpg" alt="Celular Excelcius X2">
+
+                    <h3>Excelcius X2</h3>
+
+                </div>
+
+
+                <div class="producto">
+
+                    <img src="imagenes/celular3.jpg" alt="Celular Excelcius X3">
+
+                    <h3>Excelcius X3</h3>
+
+                </div>
+
+            </div>
+
+        </section>
+                <!-- CONTACTO -->
+
+        <section id="contacto" class="seccion contacto">
+
+            <h2>Contacto</h2>
+
+            <form id="formulario">
+
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" required>
+
+
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" required>
+
+
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" required>
+
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" rows="5" required></textarea>
+
+
+                <button type="submit">Enviar</button>
+
+            </form>
+
+
+            <!-- AQUÍ SE MOSTRARÁN LOS DATOS -->
+
+            <div id="resultado" class="resultado">
+
+                <h3>Datos enviados</h3>
+
+                <p>
+                    <strong>Nombre:</strong>
+                    <span id="resultadoNombre"></span>
+                </p>
+
+                <p>
+                    <strong>Correo:</strong>
+                    <span id="resultadoCorreo"></span>
+                </p>
+
+                <p>
+                    <strong>Dirección:</strong>
+                    <span id="resultadoDireccion"></span>
+                </p>
+
+                <p>
+                    <strong>Mensaje:</strong>
+                    <span id="resultadoMensaje"></span>
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+    <footer>
+    <p>© 2026 Excelcius - Desarrollo Web Front-End</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+
+
+
+</body>
+
+</html>
